@@ -5,6 +5,7 @@ import Home from "./containers/Home";
 import Counter from "./containers/Counter";
 import Mapjson from "./containers/Mapjson";
 import Country from "./containers/Country";
+import Search from "./containers/Search";
 
 // 1. Lister toutes les pages de l'application Web
 // 2. Créer un composant par page
@@ -14,7 +15,7 @@ function App() {
   return (
     <div>
       <div>
-        <h1>React</h1>
+        <h1>React Routeur</h1>
       </div>
       <Router>
         <Switch>
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/json">
             <Mapjson />
+          </Route>
+          <Route path="/search">
+            <Search />
           </Route>
           <Route path="/">
             <Home />

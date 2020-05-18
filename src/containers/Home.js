@@ -10,13 +10,15 @@ const Home = () => {
 
   return (
     <span>
-      <a href="https://google.fr">Simple link to Google</a>
+      <a href="https://google.fr">Simple react-routeur-link to Google</a>
       <br />
-      <Link to="/country/walkman"> Page product by id</Link>
+      <Link to="/country/france"> Example of page country by name</Link>
       <br />
       <Link to="/counter">Counter using Hook</Link>
       <br />
       <Link to="/json">Map Json</Link>
+      <br />
+      <Link to="/search">Search country by name</Link>
     </span>
   );
 };
