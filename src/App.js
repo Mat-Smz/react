@@ -3,7 +3,8 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./containers/Home";
 import Counter from "./containers/Counter";
-import Product from "./containers/Product";
+import Mapjson from "./containers/Mapjson";
+import Country from "./containers/Country";
 
 // 1. Lister toutes les pages de l'application Web
 // 2. Créer un composant par page
@@ -17,11 +18,14 @@ function App() {
       </div>
       <Router>
         <Switch>
-          <Route path="/product/:id">
-            <Product />
+          <Route path="/country/:id">
+            <Country />
           </Route>
           <Route path="/counter">
             <Counter />
+          </Route>
+          <Route path="/json">
+            <Mapjson />
           </Route>
           <Route path="/">
             <Home />

@@ -12,9 +12,11 @@ const Home = () => {
     <span>
       <a href="https://google.fr">Simple link to Google</a>
       <br />
-      <Link to="/product/walkman"> Page product by id</Link>
+      <Link to="/country/walkman"> Page product by id</Link>
       <br />
       <Link to="/counter">Counter using Hook</Link>
+      <br />
+      <Link to="/json">Map Json</Link>
     </span>
   );
 };

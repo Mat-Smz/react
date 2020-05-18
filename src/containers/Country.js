@@ -1,9 +1,9 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 
-const Product = (props) => {
+const Country = (props) => {
   const params = useParams();
-  console.log(params.id); // walkman
+  console.log(params.id); // country name
 
   // axios.get("http://leboncoin.com/api/product/" + params.id);
 
@@ -11,11 +11,11 @@ const Product = (props) => {
 
   return (
     <span>
-      Product {id}
+      Country : {id}
       <br />
       <Link to="/">Home</Link>
     </span>
   );
 };
 
-export default Product;
+export default Country;
