@@ -1,5 +1,4 @@
 import React from "react";
-// import axios from "axios";
 import { Link } from "react-router-dom";
 import countryList from "./country.json";
 
@@ -13,6 +12,7 @@ const Mapjson = () => {
   ));
   return (
     <div>
+      <p>Map() of a json file </p>
       <ul>{Items}</ul>
       <br />
       <Link to="/">Home</Link>

@@ -15,7 +15,7 @@ function App() {
   return (
     <div>
       <div>
-        <h1>React Routeur</h1>
+        <h1>beta-react</h1>
       </div>
       <Router>
         <Switch>

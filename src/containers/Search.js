@@ -1,8 +1,8 @@
-// REACT
+// react
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-// AXIOS
+// axios
 import axios from "axios";
 
 const Search = () => {
@@ -13,8 +13,10 @@ const Search = () => {
   return (
     <>
       <div>
-        <p>Search your Country :</p>
-        <p> -> Use axios and hook to fetch data of RestCountries.eu Api</p>
+        <p>Search your country :</p>
+        <i>
+          (axios and hook to fetch data of RestCountries.eu Api + async/await )
+        </i>
         <form
           onSubmit={async (event) => {
             event.preventDefault();
