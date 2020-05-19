@@ -5,8 +5,6 @@ const Country = (props) => {
   const params = useParams();
   console.log(params.id); // country name
 
-  // axios.get("http://leboncoin.com/api/product/" + params.id);
-
   const { id } = params;
 
   return (
