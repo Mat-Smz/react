@@ -17,6 +17,8 @@ const Home = () => {
       <Link to="/json">Map() Json</Link>
       <br />
       <Link to="/search">API Search</Link>
+      <br />
+      <Link to="/modal">Modal</Link>
     </span>
   );
 };

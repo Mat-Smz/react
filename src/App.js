@@ -6,6 +6,7 @@ import Counter from "./containers/Counter";
 import Mapjson from "./containers/Mapjson";
 import Country from "./containers/Country";
 import Search from "./containers/Search";
+import Test from "./containers/Test";
 
 // 1. Lister toutes les pages de l'application Web
 // 2. Créer un composant par page
@@ -13,7 +14,7 @@ import Search from "./containers/Search";
 
 function App() {
   return (
-    <div class="main">
+    <div className="main">
       <div>
         <h1>beta-react</h1>
       </div>
@@ -30,6 +31,9 @@ function App() {
           </Route>
           <Route path="/search">
             <Search />
+          </Route>
+          <Route path="/modal">
+            <Test />
           </Route>
           <Route path="/">
             <Home />

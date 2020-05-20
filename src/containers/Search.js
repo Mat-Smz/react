@@ -46,15 +46,16 @@ const Search = () => {
         {!isLoading &&
           results.map((result, index) => {
             return (
-              <Link to={`/country/${result.name}`} key={index}>
-                <Card
-                  title={result.name}
-                  img={result.flag}
-                  capital={result.capital}
-                ></Card>
-              </Link>
+              // <Link to={`/country/${result.name}`} key={index}>
+              <Card
+                title={result.name}
+                img={result.flag}
+                capital={result.capital}
+              ></Card>
+              // </Link>
             );
           })}
+
         <br />
         <Link to="/">Home</Link>
       </div>
