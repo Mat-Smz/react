@@ -1,5 +1,6 @@
 // react
 import React, { useState } from "react";
+import Card from "./Card";
 import { Link } from "react-router-dom";
 
 // axios
@@ -46,13 +47,11 @@ const Search = () => {
           results.map((result, index) => {
             return (
               <Link to={`/country/${result.name}`} key={index}>
-                <p>
-                  <img src={`${result.flag}`} alt={result.name} width="120px" />
-                  <h2>{result.name}</h2>
-
-                  {/* <h3>Capital : {result.capital}</h3> */}
-                  {/* <p>{result.description}</p> */}
-                </p>
+                <Card
+                  title={result.name}
+                  img={result.flag}
+                  capital={result.capital}
+                ></Card>
               </Link>
             );
           })}

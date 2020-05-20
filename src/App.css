@@ -1,0 +1,25 @@
+body {
+  text-decoration: none;
+}
+
+.main {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.3rem;
+  background-color: whitesmoke;
+  text-decoration: none;
+  display: flex;
+
+  justify-content: space-between;
+}

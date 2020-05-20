@@ -13,7 +13,7 @@ import Search from "./containers/Search";
 
 function App() {
   return (
-    <div>
+    <div class="main">
       <div>
         <h1>beta-react</h1>
       </div>
