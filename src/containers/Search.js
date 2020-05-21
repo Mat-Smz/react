@@ -13,11 +13,9 @@ const Search = () => {
 
   return (
     <>
-      <div>
-        <p>Search your country :</p>
-        <i>
-          (axios and hook to fetch data of RestCountries.eu Api + async/await )
-        </i>
+      <div className="main">
+        <h3>Search your country </h3>
+
         <form
           onSubmit={async (event) => {
             event.preventDefault();
@@ -42,7 +40,7 @@ const Search = () => {
         </form>
       </div>
 
-      <div>
+      <div className="result">
         {!isLoading &&
           results.map((result, index) => {
             return (
@@ -55,10 +53,9 @@ const Search = () => {
               // </Link>
             );
           })}
-
-        <br />
-        <Link to="/">Home</Link>
       </div>
+      <br />
+      <Link to="/">Home</Link>
     </>
   );
 };

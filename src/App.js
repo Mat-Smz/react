@@ -14,10 +14,8 @@ import Test from "./containers/Test";
 
 function App() {
   return (
-    <div className="main">
-      <div>
-        <h1>beta-react</h1>
-      </div>
+    <div className="header">
+      <h1>beta-react</h1>
       <Router>
         <Switch>
           <Route path="/country/:id">
