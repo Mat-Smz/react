@@ -1,10 +1,32 @@
 body {
   text-decoration: none;
+  width: 90%;
+  max-width: 900px;
+  margin: 2em auto;
+  font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+}
+
+.page {
+  text-decoration: none;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .header {
-  text-decoration: none;
   background-color: whitesmoke;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background-color: whitesmoke;
+  margin-top: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,6 +73,19 @@ a {
   font-size: 12px;
 }
 
+.completCard {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 0.3rem;
+  background-color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
 .App {
   text-align: center;
   padding-top: 2rem;
@@ -85,8 +120,8 @@ a {
   position: relative;
   margin: 1.75rem auto;
   border-radius: 3px;
-  max-width: 500px;
-  padding: 2rem;
+
+  padding: 1rem;
 }
 
 .modal-header {
@@ -111,6 +146,7 @@ button {
   border-radius: 3px;
   padding: 0.3rem 1rem;
   margin-left: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .button-default {

@@ -17,12 +17,18 @@ const Card = (result) => {
       </div>
 
       <Modali.Modal {...exampleModal}>
-        <h1> {result.title}</h1>
-        <p>
-          capital: <b> {result.capital}</b>
-        </p>
+        <div className="completCard">
+          <h1> {result.title}</h1>
+          <p>
+            Capital: <b> {result.capital}</b>
+            <br />
+            Population: <b> {result.population}</b>
+            <br />
+            Region: <b> {result.region}</b>
+          </p>
 
-        <img src={`${result.img}`} alt={result.title} width="150px" />
+          <img src={`${result.img}`} alt={result.title} width="250px" />
+        </div>
       </Modali.Modal>
     </div>
   );

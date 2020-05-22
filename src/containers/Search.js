@@ -49,13 +49,13 @@ const Search = () => {
                 title={result.name}
                 img={result.flag}
                 capital={result.capital}
+                region={result.region}
+                population={result.population}
               ></Card>
               // </Link>
             );
           })}
       </div>
-      <br />
-      <Link to="/">Home</Link>
     </>
   );
 };

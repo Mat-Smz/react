@@ -7,6 +7,7 @@ import Mapjson from "./containers/Mapjson";
 import Country from "./containers/Country";
 import Search from "./containers/Search";
 import Test from "./containers/Test";
+import Footer from "./containers/Footer";
 
 // 1. Lister toutes les pages de l'application Web
 // 2. Créer un composant par page
@@ -14,31 +15,38 @@ import Test from "./containers/Test";
 
 function App() {
   return (
-    <div className="header">
-      <h1>beta-react</h1>
-      <Router>
-        <Switch>
-          <Route path="/country/:id">
-            <Country />
-          </Route>
-          <Route path="/counter">
-            <Counter />
-          </Route>
-          <Route path="/json">
-            <Mapjson />
-          </Route>
-          <Route path="/search">
-            <Search />
-          </Route>
-          <Route path="/modal">
-            <Test />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <span>
+      <div className="header">
+        <h1>beta-react</h1>
+      </div>
+      <div className="page">
+        <Router>
+          <Switch>
+            <Route path="/country/:id">
+              s
+              <Country />
+            </Route>
+            <Route path="/counter">
+              <Counter />
+            </Route>
+            <Route path="/json">
+              <Mapjson />
+            </Route>
+            <Route path="/search">
+              <Search />
+            </Route>
+            <Route path="/modal">
+              <Test />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        </Router>
+        <br />
+      </div>
+      <Footer></Footer>
+    </span>
   );
 }
 
