@@ -25,6 +25,7 @@ body {
 }
 
 .footer {
+  text-decoration: none;
   background-color: whitesmoke;
   margin-top: 5px;
   display: flex;
